@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+            background: #f2f2f2;
+        }
+
+        .calculator {
+            background: white;
+            max-width: 350px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ccc;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <h1>My Calculator 🧮</h1>
+
+    <input type="number" id="num1" placeholder="First number">
+
+    <input type="number" id="num2" placeholder="Second number">
+
+    <br>
+
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">−</button>
+    <button onclick="calculate('*')">×</button>
+    <button onclick="calculate('/')">÷</button>
+
+    <p id="result">Result: </p>
+
+</div>
+
+<script>
+
+function calculate(operator) {
+
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+
+    let result;
+
+    if (operator === "+") {
+        result = num1 + num2;
+    }
+
+    else if (operator === "-") {
+        result = num1 - num2;
+    }
+
+    else if (operator === "*") {
+        result = num1 * num2;
+    }
+
+    else if (operator === "/") {
+        result = num1 / num2;
+    }
+
+    document.getElementById("result").innerText = "Result: " + result;
+}
+
+</script>
+
+</body>
+</html>

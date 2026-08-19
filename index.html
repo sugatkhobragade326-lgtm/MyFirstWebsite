@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Business</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #ddd;
+        }
+
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 25px;
+        } 
+        @media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Business</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Welcome to My Business 🚀</h1>
+
+    <p>Quality service for everyone.</p>
+
+    <a class="btn" href="#91+9021137938">WhatsApp Us</a>
+
+</section>
+
+<section class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Modern and responsive websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Fast and user-friendly websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>Help and maintenance for your website.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: example@gmail.com</p>
+
+    <a class="btn" href="mailto:sugatkhobragade3@gmail.com">
+        Send Email
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 My Business. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
